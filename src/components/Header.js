@@ -4,7 +4,7 @@ export default function Header() {
     return(
         <header className="h-100 min-h-screen bg-cyan-600 w-1/6">
             <div className="h-64 grid grid-cols-1  p-6 font-semibold">
-                <h2 className="text-xl p-6"> NextPlayer</h2>
+                <h2 className="text-xl p-6"> NextPlayer.js</h2>
                 <nav className="text-lg grid grid-cols-1 gap-3 items-center p-6">
                     <Link href="/">Home</Link>
                     <Link href="/VideoRegister">Cadastrar Vídeo</Link>

@@ -11,11 +11,12 @@ export default function VideoCard(props) {
     }
 
     return(
-        <div className="grid grid-cols-1 text-justify p-6 bg-cyan-700 gap-6 rounded border-cyan-800 border-b-4">
+        <Link key={props.id} href={`/videos/${props.id}`} className="grid grid-cols-2 items-center text-left p-6 bg-cyan-700 gap-6 rounded border-cyan-800 border-b-4 hover:bg-emerald-500 hover:border-emerald-400 transition">
             <Thumb videoID={videoID}/>
-            <Link key={props.id} href={`/videos/${props.id}`}>{props.title}</Link>
-            <p>{props.description}</p>
-            <h2>{props.author} - {props.language}</h2>
-        </div>
+            <div>
+                <h2 className="font-bold">{props.title}</h2>
+                <span>{props.author} - {props.language}</span>
+            </div>
+        </Link>
     );
 }          

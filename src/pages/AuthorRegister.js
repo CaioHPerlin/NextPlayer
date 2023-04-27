@@ -45,8 +45,8 @@ export default function AuthorRegister() {
                     <input required className="bg-cyan-700 rounded p-3" type="text" value={channel} onChange={e => setChannel(e.target.value)} placeholder="Nome do Canal" id="channel"/>
                     <input required className="bg-cyan-700 rounded p-3" type="text" value={url} placeholder="URL" onChange={e => setURL(e.target.value)} id="url"/>
                     <div className="text-white grid grid-cols-2 gap-4">
-                        <button className="my-2 bg-emerald-500 p-6 text-xl rounded-md border-b-4 border-emerald-400">Cadastrar</button>
-                        <center onClick={clearForm} className="cursor-pointer my-2 bg-emerald-500 p-6 text-xl rounded-md border-b-4 border-emerald-400">Limpar</center>
+                        <button className="my-2 bg-emerald-500 p-6 text-xl rounded-md border-b-4 border-emerald-400 hover:bg-cyan-500 hover:border-cyan-400 transition">Cadastrar</button>
+                        <center onClick={clearForm} className="cursor-pointer my-2 bg-emerald-500 p-6 text-xl rounded-md border-b-4 border-emerald-400 hover:bg-cyan-500 hover:border-cyan-400 transition">Limpar</center>
                     </div>
                 </form>
             </Block>
