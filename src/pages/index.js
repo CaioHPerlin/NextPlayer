@@ -43,7 +43,7 @@ export default function Home() {
         <Block> 
           <h2 className="text-center mt-0 mb-6 font-semibold text-lg">Últimos Vídeos Cadastrados</h2>
           <div className="grid grid-cols-3 gap-6">   
-            {storedVideos.slice(0, 4).map(video => <VideoCard id={video.id} title={video.title} description={video.description} language={video.language} author={video.author} url={video.url}/>)}
+            {storedVideos.slice(0, 3).map(video => <VideoCard id={video.id} title={video.title} description={video.description} language={video.language} author={video.author} url={video.url}/>)}
           </div>
         </Block>
       </div>
